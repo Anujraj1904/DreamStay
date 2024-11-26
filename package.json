@@ -1,14 +1,13 @@
 {
-  "engines":{
-      "node":"20.12.2"
-    },
+  "engines": {
+    "node": "20.12.2"
+  },
   "name": "project-(airbnb)",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "npm install", 
+    "install": "npm install",
     "build": "your-build-command"
   },
   "keywords": [],
@@ -31,5 +30,7 @@
     "passport": "^0.7.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^8.0.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
