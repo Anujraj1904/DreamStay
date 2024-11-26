@@ -22,6 +22,17 @@
     padding: 0.5rem 3rem 0.5rem 3rem;
     font-size: 1rem;
   }
+  @media (max-width: 576px) {
+  .navbar-nav .form-control {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar-nav .btn {
+    width: 100%;
+  }
+}
+
 
 </style>
 
@@ -39,15 +50,15 @@
       </div>
       <!-- SEERCH BAR -->
       <div class="navbar-nav ms-auto">
-          <form class="d-flex" role="search">
-            <input 
-              class="form-control me-2 search-input" type="search" 
-              placeholder="Search destination" aria-label="Search"
-            >
-            <button class="btn btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
-          </form>
+        <form class="d-flex flex-column flex-sm-row" role="search">
+          <input 
+            class="form-control mb-2 mb-sm-0 me-sm-2 search-input" type="search" 
+            placeholder="Search destination" aria-label="Search"
+          >
+          <button class="btn btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+        </form>
       </div>
-
+      
       <!-- OTHER OPTIONS -->
 
       <div class="navbar-nav ms-auto">
