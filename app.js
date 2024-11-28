@@ -28,7 +28,10 @@ const reviewsRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js")
 
 
-// const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
+//This is to connect with local mongoDb databse  that we have created i.e data.js
+// const dbUrl = "mongodb://127.0.0.1:27017/wanderlust";
+
+// This is to connect with mondoAtlas database
 const dbUrl = process.env.ATLASDB_URL;
 
 
@@ -42,7 +45,6 @@ main()
   });
 
 async function main() {
-  // await mongoose.connect(MONGO_URL);
   await mongoose.connect(dbUrl);
 }
 
