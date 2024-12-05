@@ -4,13 +4,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-.container {
-  flex: 1;
-}
-
 /* Navbar */
 .navbar {
-  height : auto;
+  height: auto;
   background-color: white;
 }
 
@@ -20,7 +16,7 @@ body {
 }
 
 .nav-link {
-  color : #222222 !important;
+  color: #222222 !important;
 }
 
 /* Footer */
@@ -33,6 +29,7 @@ body {
 .f-info-links a:hover {
   text-decoration: underline;
 }
+
 .f-info-links, .f-info-socials, .f-info-brand {
   width: 100%;
   display: flex;
@@ -44,6 +41,7 @@ body {
   margin-right: 1rem;
   font-size: 1.2rem;
 }
+
 .f-info {
   text-align: center;
   height: 8rem;
@@ -54,7 +52,7 @@ body {
   align-items: space-evenly;
 }
 
-/*  cards  */
+/*  Index cards  */
 .listing-card {
   border: none !important;
   margin-bottom: 2rem;
@@ -62,9 +60,10 @@ body {
 
 .card-img-top {
   border-radius: 1rem !important;
-  width : 100% !important;
+  width: 100% !important;
   object-fit: cover !important;
 }
+
 .card-body {
   padding: 0 !important;
 }
@@ -96,20 +95,3 @@ body {
   border: none !important;
 }
 
-/* Show page */
-
-.show-img {
-  height: 30vh;
-}
-
-.btns {
-  display: flex;
-}
-
-.show-card {
-  padding-left: 0;
-  padding-right: 0;
-}
-.del {
-  width: 6rem !important;
-} 

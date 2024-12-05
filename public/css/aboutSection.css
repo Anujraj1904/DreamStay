@@ -1,0 +1,96 @@
+.container {
+  width: 100%;
+}
+
+.tittle-box h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.preview-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Container Styles for responsive */
+@media (min-width: 700px) and (max-width: 1900px) {
+  .preview-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    height: 300px;
+  }
+  .main-content {
+    flex-wrap: wrap;
+  }
+}
+
+/* Show page */
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.del{
+  width: 6rem !important;
+}
+.edi{
+  width: 6rem !important;
+  border-radius: 8px;
+  border: solid red;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.edi i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+
+/* Review section */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+   /* Center the cards within the row */
+}
+.card-body {
+  padding: 20px !important;
+}
+#del-rev {
+  margin-left: 20px !important;
+
+}
+
+.card-container {
+  flex: 1 1 calc(50% - 20px); /* Adjusts the width of each card to 50% minus margin */
+  margin: 10px; /* Adds space between the cards */
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100%; /* Ensures the card takes the full width of its container */
+}
+
+@media (max-width: 800px) {
+  .card-container {
+    flex: 1 1 100%;
+    /* Makes each card take the full width on smaller screens */
+    margin: 10px 0; 
+    /* Adjusts the margin for smaller screens */
+  }
+}
