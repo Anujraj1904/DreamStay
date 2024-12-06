@@ -103,7 +103,7 @@ app.use((req, res, next) => {
 
 // Default route (root) 
 app.get('/', (req, res) => { 
-  res.render('/listings/index.ejs', { title: 'Welcome to Dream Stay!', listingsUrl: '/listings' });
+  res.render('/views/listings/index.ejs', { title: 'Welcome to Dream Stay!', listingsUrl: '/listings' });
 });
 
 
