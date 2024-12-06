@@ -29,10 +29,10 @@ const userRouter = require("./routes/user.js")
 
 
 //This is to connect with local mongoDb databse  that we have created i.e data.js
-const dbUrl = "mongodb://127.0.0.1:27017/wanderlust";
+// const dbUrl = "mongodb://127.0.0.1:27017/wanderlust";
 
 // This is to connect with mondoAtlas database
-// const dbUrl = process.env.ATLASDB_URL;
+const dbUrl = process.env.ATLASDB_URL;
 
 
 
