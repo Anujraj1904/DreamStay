@@ -101,8 +101,9 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/', (req, res) => {
-   res.send("/listings", listingsRouter);
+// Default route (root) 
+app.get('/', (req, res) => { 
+  res.render('home', { title: 'Welcome to Dream Stay!', listingsUrl: '/listings' });
 });
 
 
