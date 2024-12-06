@@ -7,7 +7,6 @@ module.exports.index = async (req, res) => {
 };
 
 //New routes
-
 module.exports.renderNewForm = (req, res) => {
   res.render("listings/new.ejs");
 };
@@ -50,7 +49,6 @@ module.exports.createNewListing = async (req, res, next) => {
 };
 
 //Edit routes
-
 module.exports.editListings = async (req, res) => {
   let { id } = req.params;
   const listing = await Listing.findById(id);
@@ -59,8 +57,6 @@ module.exports.editListings = async (req, res) => {
     req.flash("error", "Listing you requested for does not exist");
     res.redirect("/listings");
   }
-
-
   let originalImage = listing.image.url;
   originalImageUrl  = originalImage.replace("/uplode", "/uplode/ w_250");
   res.render("listings/edit.ejs", { listing, originalImageUrl});

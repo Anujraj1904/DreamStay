@@ -101,6 +101,9 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get('/', (req, res) => {
+  res.render('index', { title: 'Welcome to Dream Stay!' });
+});
 
 
 // Listing.
@@ -111,7 +114,7 @@ app.use("/listings/:id/reviews", reviewsRouter );
 app.use("/", userRouter);
 
 app.all("*", (req, res, next) => {
-  next(new ExpressError(404, "Page will be Found soon"));
+  next(new ExpressError(404, "Page will not Found "));
 });
 
 app.use((err, req, res, next) => {
