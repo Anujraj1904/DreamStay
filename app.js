@@ -102,7 +102,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-   res.send('Welcome to the home page!');
+   res.send("/listings", listingsRouter);
 });
 
 
